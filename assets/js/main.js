@@ -108,4 +108,33 @@
     })
   });
 
+  var texts = ["Hello, I'm Gabrielle", "Bonjour, Je suis Gabrielle", "你好, 我是Gabrielle"];
+              var count = 0;
+              var index = 0;
+              var currentText = "";
+              var letter = "";
+            
+              function type() {
+                if (index === texts[count].length) {
+                  index = 0;
+                  count++;
+                  if (count === texts.length) {
+                    count = 0;
+                  }
+                }
+                currentText = texts[count];
+                letter = currentText.slice(0, ++index);
+            
+                document.querySelector(".typing-text").textContent = letter;
+                if (letter.length === currentText.length) {
+                  setTimeout(function () {
+                    type();
+                  }, 2000); // Set the delay between text changes (in milliseconds)
+                } else {
+                  setTimeout(type, 50);
+                }
+              }
+            
+              type();
+
 })()
