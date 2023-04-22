@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Inconsolata", monospace;
+  font-family: "Calligraffitti", monospace;
   color: #0d1e2d;
   background-color:#eed9c4
 }
@@ -30,7 +30,7 @@ h4,
 h5,
 h6,
 .font-heading {
-  font-family: "Raleway", sans-serif;
+  font-family: "Bad Script", "Long Cang", monospace;
 }
 
 .section {
@@ -406,7 +406,7 @@ h6,
 }
 
 .custom-navbar .navbar-brand {
-  font-size: 1.7rem;
+  font-size: 2.0rem; 
 }
 
 /* Burger */
